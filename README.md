@@ -25,7 +25,7 @@ It mainly depends on the size of your application data set and whether slow perf
 
 ### Start application <a name="start"></a>
     1. pull code
-    2. ./mvnw package clean -DskipTests
+    2. ./mvnw package clean
     3. docker-compose up
 
 ### Schema definition <a name="schema"></a>
