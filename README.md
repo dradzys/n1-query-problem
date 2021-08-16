@@ -24,9 +24,12 @@ It mainly depends on the size of your application data set and whether slow perf
 # Setup <a name="setup"></a>
 
 ### Start application <a name="start"></a>
-    1. pull code
-    2. ./mvnw package clean
-    3. docker-compose up
+
+1. Pull code
+2. Build jar
+   1. Unix `./mvnw clean package`
+   2. Windows  `mvnw.cmd clean package`
+3. `docker-compose up`
 
 ### Schema definition <a name="schema"></a>
 to be filled
