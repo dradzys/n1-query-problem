@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="dovydas (generated)" id="1629216005558-1">
+        <createTable tableName="comment">
+            <column name="uuid" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="comment" type="VARCHAR(255)"/>
+            <column name="post_uuid" type="UUID"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="dovydas (generated)" id="1629216005558-2">
+        <createTable tableName="post">
+            <column name="uuid" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="dovydas (generated)" id="1629216005558-3">
+        <addPrimaryKey columnNames="uuid" constraintName="comment_pkey" tableName="comment"/>
+    </changeSet>
+    <changeSet author="dovydas (generated)" id="1629216005558-4">
+        <addPrimaryKey columnNames="uuid" constraintName="post_pkey" tableName="post"/>
+    </changeSet>
+    <changeSet author="dovydas (generated)" id="1629216005558-5">
+        <addForeignKeyConstraint baseColumnNames="post_uuid" baseTableName="comment" constraintName="fk75u7p9vcoeqwueikrh0ql8ahv" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="uuid" referencedTableName="post"/>
+    </changeSet>
+</databaseChangeLog>
