@@ -3,3 +3,5 @@ databaseChangeLog:
       file: db/changelog/changes/2021-08-17-initial-schema.xml
   - include:
       file: db/changelog/changes/2021-08-17-initial-data-set.sql
+  - include:
+      file: db/changelog/changes/2021-08-19-additional-data.sql
