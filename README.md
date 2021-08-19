@@ -10,8 +10,7 @@ found in ORM's, native SQL and other data access technologies.
     2. [Is it a problem?](#problem)
 2. [Setup](#setup)
     1. [Start application](#start)
-    2. [Schema](#schema)
-    3. [Configuration](#configuration)
+    2. [Configuration](#configuration)
 3. [Examples](#examples)
     1. [Native SQL](#native)
     2. [JPA/Hibernate](#jpa)
@@ -42,13 +41,11 @@ application with large data sets.
     2. Windows  `mvnw.cmd clean package`
 3. `docker-compose up`
 
-### Schema definition <a name="schema"></a>
-
-to be filled
-
 ### Configuration <a name="configuration"></a>
 
-to be filled
+Spring configuration properties at: `resources/application.properties`
+
+Liquibase scripts at: `resources/db/changelog/changes/`
 
 # Examples <a name="examples"></a>
 
