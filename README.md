@@ -83,12 +83,12 @@ present.
 `JOIN FETCH` is specific to JPA and it allows associations to be initialized along with their parent
 objects using a single query.
 
-![alt text](https://github.com/Duovis89/N1QueryProblem/tree/main/src/main/resources/static/JOIN_FETCH_SINGLE_QUERY.png?raw=true)
+![JOIN_FETCH_SINGLE_QUERY](https://user-images.githubusercontent.com/36667118/130096663-cf509e6f-85b8-4bb8-a8e4-f44447fb1c99.png)
 
 `JOIN` doesn't allow associated collections to be initialized along with their parent object using a
 single query.
 
-![alt text](https://github.com/Duovis89/N1QueryProblem/tree/main/src/main/resources/static/JOIN_N+1_QUERY.png?raw=true)
+![JOIN_N+1_QUERY](https://user-images.githubusercontent.com/36667118/130096805-f62074f1-7afd-48d1-98e9-87585ead6766.png)
 
 ### API <a name="api"></a>
 
