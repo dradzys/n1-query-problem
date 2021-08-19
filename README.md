@@ -74,7 +74,21 @@ FROM COMMENT c
 
 ### JPA and Hibernate <a name="jpa"></a>
 
-to be filled
+The n+1 problem can occur both with `FetchType.EAGER` and `FetchType.LAZY` associations. It is
+generally reccommended to use `FetchType.LAZY`, since it only loads on deman, even if n+1 is
+present.
+
+`JOIN FETCH` vs `JOIN`
+
+`JOIN FETCH` is specific to JPA and it allows associations to be initialized along with their parent
+objects using a single query.
+
+![alt text](https://github.com/Duovis89/N1QueryProblem/tree/main/src/main/resources/static/JOIN_FETCH_SINGLE_QUERY.png "Join Fetch")
+
+`JOIN` doesn't allow associated collections to be initialized along with their parent object using a
+single query.
+
+![alt text](https://github.com/Duovis89/N1QueryProblem/tree/main/src/main/resources/static/JOIN_N+1_QUERY.png "Join")
 
 ### API <a name="api"></a>
 
